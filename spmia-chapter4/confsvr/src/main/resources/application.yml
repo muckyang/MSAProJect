@@ -1,5 +1,5 @@
 #
-#   This is the core configuration for service.  I have two examples here:
+#   This is the core configuration for a configuration service.  I have two examples here:
 #
 #       -  A configuration service which completelty loads the configuration for the services
 #          from the local file server of the config service.  This should only be used for
@@ -15,30 +15,36 @@ server:
 spring:
   cloud:
     config:
-      discovery:
-        enabled: true
       server:
+        # encrypt.enabled should moved to bootstrap.yml
         encrypt.enabled: false
         git:
-          uri: https://github.com/klimtever/config-repo/
+          uri: https://github.com/muckyang/MSA_config-repo/
           searchPaths: licensingservice,organizationservice
-          username: native-cloud-apps
-          password: 0ffended
+##           public 저장소의 경우 username, password생략 
+          # username: native-cloud-apps
+          # password: 0ffended
+          
+## 교재코드
+          # uri: https://github.com/klimtever/config-repo/
+          # searchPaths: licensingservice,organizationservice
+          # username: native-cloud-apps
+          # password: 0ffended
 
 
 ####
 #Classpath and file-based solution
 ####
 
-#server:
+# server:
 #   port: 8888
-#spring:
+# spring:
 #  profiles:
 #    active: native
 #  cloud:
 #     config:
 #       server:
 #           native:
-#              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
-#                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
-##              #searchLocations: classpath:config/,classpath:config/licensingservice
+#              searchLocations: file:///Users/yn782/Desktop/MSAPJT/spmia-chapter3/confsvr/src/main/resources/config/licensingservice,
+#                               file:///Users/yn782/Desktop/MSAPJT/spmia-chapter3/confsvr/src/main/resources/config/organizationservice
+#             #  searchLocations: classpath:config/,classpath:config/licensingservice
