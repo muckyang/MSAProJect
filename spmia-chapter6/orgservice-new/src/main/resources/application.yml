@@ -6,7 +6,8 @@ logging:
     org.springframework.web: WARN
     com.thoughtmechanix: DEBUG
 
-
+server:
+  port: 8085
 eureka:
   instance:
     preferIpAddress: true

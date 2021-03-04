@@ -81,6 +81,8 @@ public class LicenseService {
             commandProperties = {
                     
                     @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),
+
+                    //타임아웃 비율 설정 50 = 50% 이상 시간초과 => 아예 우회시킴 
                     @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "50"),
                     @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "7000"),
                     @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds", value = "15000"),

@@ -20,10 +20,10 @@ spring:
       server:
         encrypt.enabled: false
         git:
-          uri: https://github.com/klimtever/config-repo/
+          uri: https://github.com/muckyang/MSA_config-repo/
           searchPaths: licensingservice,organizationservice,specialroutesservice,zuulservice
-          username: native-cloud-apps
-          password: 0ffended
+          # username: native-cloud-apps
+          # password: 0ffended
 
 #Setting logging levels
 logging:
