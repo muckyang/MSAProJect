@@ -1,3 +1,4 @@
+example.property: "I AM A AWS!!"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
 spring.jpa.show-sql: "true"
