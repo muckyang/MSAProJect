@@ -17,16 +17,19 @@ spring:
     config:
       server:
         # encrypt.enabled should moved to bootstrap.yml
-        # encrypt.enabled: false
+        encrypt.enabled: false
         git:
-            uri: https://github.com/muckyang/MSAProJect/tree/master/config-repo
-            searchPaths: licensingservice,organizationservice
-            username: native-cloud-apps
-            password: 0ffended
-          uri: https://github.com/klimtever/config-repo/
+          uri: https://github.com/muckyang/MSA_config-repo/
           searchPaths: licensingservice,organizationservice
-          username: native-cloud-apps
-          password: 0ffended
+##           public 저장소의 경우 username, password생략 
+          # username: native-cloud-apps
+          # password: 0ffended
+          
+## 교재코드
+          # uri: https://github.com/klimtever/config-repo/
+          # searchPaths: licensingservice,organizationservice
+          # username: native-cloud-apps
+          # password: 0ffended
 
 
 ####
@@ -44,4 +47,4 @@ spring:
 #           native:
 #              searchLocations: file:///Users/yn782/Desktop/MSAPJT/spmia-chapter3/confsvr/src/main/resources/config/licensingservice,
 #                               file:///Users/yn782/Desktop/MSAPJT/spmia-chapter3/confsvr/src/main/resources/config/organizationservice
-##              #searchLocations: classpath:config/,classpath:config/licensingservice
+#             #  searchLocations: classpath:config/,classpath:config/licensingservice

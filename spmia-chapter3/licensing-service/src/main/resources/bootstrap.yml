@@ -3,7 +3,8 @@ spring:
     name: licensingservice
   profiles:
     active:
-      default
+    # dev, prod , default 설정에 따라 설정 파일이 적용됨
+      dev
   cloud:
     config:
       uri: http://localhost:8888
