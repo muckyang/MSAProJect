@@ -1,3 +1,7 @@
+## Config-repo 관련
+- 해당 저장소의 config-repo 사용시 경로 오류 발생으로 다음 저장소를 사용 (application.yml 파일에 해당 위치로 지정함)
+- https://github.com/muckyang/MSA_config-repo/
+
 <h1> 스프링 마이크로서비스 코딩 공작소(길벗, 2018)
 
 ## 예제 파일에 대하여 
