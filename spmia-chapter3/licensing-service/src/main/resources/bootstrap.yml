@@ -3,6 +3,7 @@ spring:
     name: licensingservice
   profiles:
     active:
+    # dev, prod , default 설정에 따라 설정 파일이 적용됨
       dev
   cloud:
     config:
