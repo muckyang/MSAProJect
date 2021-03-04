@@ -10,34 +10,38 @@
 
 
 ####################################
-# server:
-#   port: 8888
-# spring:
-#   cloud:
-#     config:
-#       server:
-#         # encrypt.enabled should moved to bootstrap.yml
-#         # encrypt.enabled: false
-#         git:
-#           uri: https://github.com/klimtever/config-repo/
-#           searchPaths: licensingservice,organizationservice
-#           username: native-cloud-apps
-#           password: 0ffended
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        # encrypt.enabled should moved to bootstrap.yml
+        # encrypt.enabled: false
+        git:
+            uri: https://github.com/muckyang/MSAProJect/tree/master/config-repo
+            searchPaths: licensingservice,organizationservice
+            username: native-cloud-apps
+            password: 0ffended
+          uri: https://github.com/klimtever/config-repo/
+          searchPaths: licensingservice,organizationservice
+          username: native-cloud-apps
+          password: 0ffended
 
 
 ####
 #Classpath and file-based solution
 ####
 
-server:
-  port: 8888
-spring:
- profiles:
-   active: native
- cloud:
-    config:
-      server:
-          native:
-             searchLocations: file:///Users/yn782/Desktop/MSA/006962/spmia-chapter3/confsvr/src/main/resources/config/licensingservice,
-                              file:///Users/yn782/Desktop/MSA/006962/spmia-chapter3/confsvr/src/main/resources/config/organizationservice
+# server:
+#   port: 8888
+# spring:
+#  profiles:
+#    active: native
+#  cloud:
+#     config:
+#       server:
+#           native:
+#              searchLocations: file:///Users/yn782/Desktop/MSAPJT/spmia-chapter3/confsvr/src/main/resources/config/licensingservice,
+#                               file:///Users/yn782/Desktop/MSAPJT/spmia-chapter3/confsvr/src/main/resources/config/organizationservice
 ##              #searchLocations: classpath:config/,classpath:config/licensingservice
