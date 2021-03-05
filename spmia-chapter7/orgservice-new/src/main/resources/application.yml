@@ -1,5 +1,6 @@
 
-
+server:
+  port: 8087
 #Setting the logging levels for the service
 logging:
   level:

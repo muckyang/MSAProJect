@@ -24,6 +24,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 zuul:
+  # 유레카 서비스 ID기반의 모든경로 제외
+  ignored-services: '*'
+  # 접두어 설정
   prefix:  /api
   routes:
+  # 주울에 엔드포인트로 노출시킬 서비스만 등록! 
     organizationservice: /organization/**
+    licensingservice: /licensing/**
