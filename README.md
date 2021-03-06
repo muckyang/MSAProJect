@@ -2,6 +2,20 @@
 - 해당 저장소의 config-repo 사용시 경로 오류 발생으로 다음 저장소를 사용 (application.yml 파일에 해당 위치로 지정함)
 - https://github.com/muckyang/MSA_config-repo/
 
+
+## 챕터별 담긴 내용
+- chap1. 기본 스프링 프로젝트
+- chap2. REST api로 구성한 Controller 및 Spring-actuator 적용
+- chap3. 마이크로 서비스 적용, Spring Cloud - ConfigServer로 서비스 관리 + 여려종류의 Config 파일 작성 및 적용 (default, dev, prod, aws 등)
+- chap4. Spring Eureka 적용(서비스 디스커버리), 
+- chap5. Netfilx Histrix의 클라이언트 회복성 패턴 적용(폴백과 벌크헤드 적용 feat. Assert 클래스 ) 
+- chap6. Netfilx Zuul을 통한 서비스 라우팅, 주울에 서비스 등록, 필터적용 (인증 + 인가 + 로그수집)
+- chap7. 마이크로 서비스 보안 OAuth2 적용 (+JWT 적용)
+- chap8. - 
+- chap9. -
+- chap10. -
+
+
 <h1> 스프링 마이크로서비스 코딩 공작소(길벗, 2018)
 
 ## 예제 파일에 대하여 
